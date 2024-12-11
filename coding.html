@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina's Portfolio | Coding</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <meta name="description" content="My coding" />
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <h2>Kristina's Portfolio</h2>
+            <button class="toggle-button" id="close-sidebar">&times;</button>
+        </div>
+        <nav class="menu">
+            <a href="portfolio.html" class="menu-item active">Home</a>
+            <a href="poetry.html" class="menu-item">Poetry</a>
+            <a href="coding.html" class="menu-item">Coding</a>
+            <a href="music.html" class="menu-item">Music</a>
+            <a href="contact.html" class="menu-item">Contact</a>
+        </nav>
+    </div>
+    <button class="open-button" id="open-sidebar">&#9776;</button>
+    <script>
+        document.getElementById('close-sidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.add('hidden');
+        });
+
+        document.getElementById('open-sidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.remove('hidden');
+        });
+    </script>
+    <main>
+        <h1>Welcome to Kristina's Portfolio</h1>
+        <a href="https://github.com/Kevsyukova">My github</a>
+        <p>Explore my projects, poetry, music, and more!</p>
+        
+        <img src="cage.jpg" alt="Placeholder Image" height="100px">
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

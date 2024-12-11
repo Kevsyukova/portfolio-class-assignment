@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina's Portfolio | Music</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <meta name="description" content="Music" />
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <h2>Kristina's Portfolio</h2>
+            <button class="toggle-button" id="close-sidebar">&times;</button>
+        </div>
+        <nav class="menu">
+            <a href="portfolio.html" class="menu-item active">
+                <span>Home</span>
+            </a>
+            <a href="poetry.html" class="menu-item">
+                <span>Poetry</span>
+            </a>
+            <a href="coding.html" class="menu-item">
+                <span>Coding</span>
+            </a>
+            <a href="music.html" class="menu-item">
+                <span>Music</span>
+            </a>
+            <a href="contact.html" class="menu-item">
+                <span>Contact</span>
+            </a>
+        </nav>
+    </div>
+    <button class="open-button" id="open-sidebar">&#9776;</button>
+    <script>
+        document.getElementById('close-sidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.add('hidden');
+        });
+
+        document.getElementById('open-sidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.remove('hidden');
+        });
+    </script>
+
+    <!-- Use the nav area to add hyperlinks to other pages within the website -->
+    <main>
+        <img src="corn.jpg" height="100" width="100"></img>
+    </main>
+
+    <!-- Use the footer area to add webpage footer content -->
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

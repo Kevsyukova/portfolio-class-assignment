@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina's Portfolio | Poetry</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <meta name="description" content="Enter my mind with my writing" />
+
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <h2>Kristina's Portfolio</h2>
+            <button class="toggle-button" id="close-sidebar">&times;</button>
+        </div>
+        <nav class="menu">
+            <a href="portfolio.html" class="menu-item active">
+                <span>Home</span>
+            </a>
+            <a href="poetry.html" class="menu-item">
+                <span>Poetry</span>
+            </a>
+            <a href="coding.html" class="menu-item">
+                <span>Coding</span>
+            </a>
+            <a href="music.html" class="menu-item">
+                <span>Music</span>
+            </a>
+            <a href="contact.html" class="menu-item">
+                <span>Contact</span>
+            </a>
+        </nav>
+    </div>
+    <button class="open-button" id="open-sidebar">&#9776;</button>
+    <script>
+        document.getElementById('close-sidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.add('hidden');
+        });
+
+        document.getElementById('open-sidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.remove('hidden');
+        });
+    </script>
+
+    <!-- Use the nav area to add hyperlinks to other pages within the website -->
+    <main>
+        <img src="rat.jpg" height="100" width="100"></img>
+    <div id="what_makes_a_monster">
+        <div id="what_makes_a_monster">
+            <details>
+                <summary>What makes a monster</summary>
+                <p class="what_makes_a_monster_paragraph">
+                    Is it the fear they instill?<br>
+
+                    Or darkness they foster?<br>
+
+                    Is it the feeling they're ill?<br>
+
+                    Or the slunch in their posture ?<br>
+
+                    Is it the love that's held ransom?<br>
+
+                    Or the unknown you can't see?<br>
+
+                    Are the things you can't fathom ?<br>
+
+                    Still haunting your dreams?<br>
+
+                    Are you afraid that they'll hurt you?<br>
+
+                    Or not like what you'll find?<br>
+
+                    Are you afraid that they're perfect?<br>
+
+                    And you'll be unkind?<br>
+
+                    We point and make judgments<br>
+
+                    With little time to discuss<br>
+
+                    All Our hate is abundant<br>
+
+                    Cause the monsters are us</p>
+            </details>
+        </div>
+    </div>
+    </div>
+    </main>
+
+    <!-- Use the footer area to add webpage footer content -->
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
